@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 html,body{
     height: 100%;
@@ -11,136 +10,34 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-   
-}
-#nav{
-    width: 100%;
-    padding: 40px 60px;
- 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#nav-part1{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-#nav-part2{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-}
-#nav h3{
-    font-size: 25px;
-    font-weight: 300;
-}
-#nav h2{
-    font-size: 25px;
-    font-weight: 300;
-}#nav h4{
-    font-size: 25px;
-    font-weight: 300;
-}
-#contant{
-    margin-top: 100px;
-    padding: 40px 65px;
-
-}
-#contant h3{
-    font-size:30px ;
-    font-weight: 300;
-}
-#contant h1{
-    font-size: 120px;
-    line-height: 150px;
-    font-weight: 500;
-    letter-spacing: -5px;
-    word-spacing: 5px;
-
-}
-#case{
-    padding: 40px 65px;
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#case h4{
-    font-size: 26px;
-    font-weight: 500;
-}
-#case h5{
-    font-size: 26px;
-    font-weight: 500;
-}
-#right {
-    display: flex end;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
-}
-#line{
-    height: 2px;
-    width: 160px;
-    background-color: black;
-}
-#projects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 65px;
-    gap: 60px;
-}
-.elem{
-    width: 50%;
-}
-.elem-img{
-    height:500px ;
-    width: 100%;
-    background-color: rgb(174, 207, 235);
-    border-radius: 30px;
-    background-position: center 0;
-    background-size: cover;
-    padding: 70px;
-}
-#img2{
-    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/a8/ea/ba/a8eabae0-e8a2-0cdc-e3b0-041302a981d1/089f7932-13ca-4aa0-97ff-6919c37a86de_1.jpg/643x0w.jpg);
-}
-#img1{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhWcUcZD8sMCzLDC4mE359BeatJcWoFojJrHx97VwhztacwHjp);
-}
-.bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
-
-}
-.bottom i{
-    padding: 14px 30px;
-    font-size: 22px;
-    border: 2px solid #000;
-    border-radius: 50px;
-    font-weight: 800;
-}
-.bottom i :hover{
-    background-color: black;
+    background-color: #111;
+    position: relative;
     color: white;
 }
-.bottom h2{
-    font-size:40px ;
-    font-weight: 500;
-    margin-bottom: 5px;
-
+.elem{
+    height: 100px;
+    width: 100%;
+ 
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
-.bottom h4{
-    font-size: 20px;
-    color: #595858;
-    font-weight: 500;
+.elem h1{
+    font-size: 6vw;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+.elem img{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-90%,-90%);
+    opacity: 0;
+    transition: all linear 0.3s;
 }
